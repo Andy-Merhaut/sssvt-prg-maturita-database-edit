@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaturitaDatabaseEdit", "MaturitaDatabaseEdit\MaturitaDatabaseEdit.csproj", "{DDBBA20E-9251-44C0-9707-ECE6F548DF66}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DDBBA20E-9251-44C0-9707-ECE6F548DF66}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DDBBA20E-9251-44C0-9707-ECE6F548DF66}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DDBBA20E-9251-44C0-9707-ECE6F548DF66}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DDBBA20E-9251-44C0-9707-ECE6F548DF66}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B33B723B-BF3A-4437-94B8-2206BDB36C13}
+	EndGlobalSection
+EndGlobal
