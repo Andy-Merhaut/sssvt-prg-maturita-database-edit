@@ -6,7 +6,7 @@ namespace MaturitaDatabaseEdit
     [DbConfigurationType(typeof(MySql.Data.EntityFramework.MySqlEFConfiguration))]
     public class MyContext : DbContext
     {
-        public DbSet<Person> People { get; set; }
+        public DbSet<Bike> Bike { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

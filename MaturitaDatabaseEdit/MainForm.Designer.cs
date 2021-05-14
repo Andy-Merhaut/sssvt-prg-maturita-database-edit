@@ -33,12 +33,15 @@ namespace MaturitaDatabaseEdit
             this.ContextPanel = new System.Windows.Forms.Panel();
             this.MainDataGridView = new System.Windows.Forms.DataGridView();
             this.MainListBox = new System.Windows.Forms.ListBox();
+            this.AddButton = new System.Windows.Forms.Button();
+            this.MenuPanel.SuspendLayout();
             this.ContextPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // MenuPanel
             // 
+            this.MenuPanel.Controls.Add(this.AddButton);
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.MenuPanel.Location = new System.Drawing.Point(0, 391);
             this.MenuPanel.Name = "MenuPanel";
@@ -71,6 +74,16 @@ namespace MaturitaDatabaseEdit
             this.MainListBox.Size = new System.Drawing.Size(776, 160);
             this.MainListBox.TabIndex = 1;
             // 
+            // AddButton
+            // 
+            this.AddButton.Location = new System.Drawing.Point(288, 24);
+            this.AddButton.Name = "AddButton";
+            this.AddButton.Size = new System.Drawing.Size(75, 23);
+            this.AddButton.TabIndex = 0;
+            this.AddButton.Text = "Add";
+            this.AddButton.UseVisualStyleBackColor = true;
+            this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -80,6 +93,7 @@ namespace MaturitaDatabaseEdit
             this.Controls.Add(this.MenuPanel);
             this.Name = "MainForm";
             this.Text = "MainForm";
+            this.MenuPanel.ResumeLayout(false);
             this.ContextPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.MainDataGridView)).EndInit();
             this.ResumeLayout(false);
@@ -92,6 +106,7 @@ namespace MaturitaDatabaseEdit
         private System.Windows.Forms.Panel ContextPanel;
         private System.Windows.Forms.ListBox MainListBox;
         private System.Windows.Forms.DataGridView MainDataGridView;
+        private System.Windows.Forms.Button AddButton;
     }
 }
 
