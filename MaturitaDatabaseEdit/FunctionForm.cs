@@ -15,6 +15,7 @@ namespace MaturitaDatabaseEdit
         private void OkButton_Click(object sender, EventArgs e)
         {
             this.Insert();
+            this.Close();
         }
 
         public void Insert()
