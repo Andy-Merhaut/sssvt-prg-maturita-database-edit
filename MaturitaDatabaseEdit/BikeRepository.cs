@@ -17,5 +17,16 @@ namespace MaturitaDatabaseEdit
             this._database.Bike.Add(bike);
             this._database.SaveChanges();
         }
+
+        public void Delete(Bike bike)
+        {
+            this._database.Bike.Remove(bike);
+            this._database.SaveChanges();
+        }
+
+        public Bike FindBike(int id)
+        {
+            return this._database.Bike.Find(id);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System.Windows.Forms;
+﻿using System;
+using System.Windows.Forms;
 
 namespace MaturitaDatabaseEdit
 {
@@ -16,6 +17,20 @@ namespace MaturitaDatabaseEdit
         {
             FunctionForm functionForm = new FunctionForm();
             functionForm.ShowDialog();
+        }
+
+        private void DeleteButton_Click(object sender, System.EventArgs e)
+        {
+            DataGridViewRow currentRow = this.MainDataGridView.CurrentRow;
+
+            object id = currentRow.Cells[0].Value;
+
+            Bike bike = this._repository.FindBike(Convert.ToInt32(id));
+
+            this._repository.Delete(bike);
+
+            BikeRepository bikeRepository = new BikeRepository();
+            this.MainDataGridView.DataSource = bikeRepository.SelectAll();
         }
     }
 }

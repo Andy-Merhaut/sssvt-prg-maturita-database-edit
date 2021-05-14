@@ -32,8 +32,8 @@ namespace MaturitaDatabaseEdit
             this.MenuPanel = new System.Windows.Forms.Panel();
             this.ContextPanel = new System.Windows.Forms.Panel();
             this.MainDataGridView = new System.Windows.Forms.DataGridView();
-            this.MainListBox = new System.Windows.Forms.ListBox();
             this.AddButton = new System.Windows.Forms.Button();
+            this.DeleteButton = new System.Windows.Forms.Button();
             this.MenuPanel.SuspendLayout();
             this.ContextPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.MainDataGridView)).BeginInit();
@@ -41,6 +41,7 @@ namespace MaturitaDatabaseEdit
             // 
             // MenuPanel
             // 
+            this.MenuPanel.Controls.Add(this.DeleteButton);
             this.MenuPanel.Controls.Add(this.AddButton);
             this.MenuPanel.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.MenuPanel.Location = new System.Drawing.Point(0, 391);
@@ -50,7 +51,6 @@ namespace MaturitaDatabaseEdit
             // 
             // ContextPanel
             // 
-            this.ContextPanel.Controls.Add(this.MainListBox);
             this.ContextPanel.Controls.Add(this.MainDataGridView);
             this.ContextPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ContextPanel.Location = new System.Drawing.Point(0, 0);
@@ -61,18 +61,11 @@ namespace MaturitaDatabaseEdit
             // MainDataGridView
             // 
             this.MainDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.MainDataGridView.Location = new System.Drawing.Point(12, 12);
+            this.MainDataGridView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainDataGridView.Location = new System.Drawing.Point(0, 0);
             this.MainDataGridView.Name = "MainDataGridView";
-            this.MainDataGridView.Size = new System.Drawing.Size(776, 205);
+            this.MainDataGridView.Size = new System.Drawing.Size(800, 391);
             this.MainDataGridView.TabIndex = 0;
-            // 
-            // MainListBox
-            // 
-            this.MainListBox.FormattingEnabled = true;
-            this.MainListBox.Location = new System.Drawing.Point(12, 223);
-            this.MainListBox.Name = "MainListBox";
-            this.MainListBox.Size = new System.Drawing.Size(776, 160);
-            this.MainListBox.TabIndex = 1;
             // 
             // AddButton
             // 
@@ -83,6 +76,16 @@ namespace MaturitaDatabaseEdit
             this.AddButton.Text = "Add";
             this.AddButton.UseVisualStyleBackColor = true;
             this.AddButton.Click += new System.EventHandler(this.AddButton_Click);
+            // 
+            // DeleteButton
+            // 
+            this.DeleteButton.Location = new System.Drawing.Point(406, 24);
+            this.DeleteButton.Name = "DeleteButton";
+            this.DeleteButton.Size = new System.Drawing.Size(75, 23);
+            this.DeleteButton.TabIndex = 1;
+            this.DeleteButton.Text = "Delete";
+            this.DeleteButton.UseVisualStyleBackColor = true;
+            this.DeleteButton.Click += new System.EventHandler(this.DeleteButton_Click);
             // 
             // MainForm
             // 
@@ -104,9 +107,9 @@ namespace MaturitaDatabaseEdit
 
         private System.Windows.Forms.Panel MenuPanel;
         private System.Windows.Forms.Panel ContextPanel;
-        private System.Windows.Forms.ListBox MainListBox;
         private System.Windows.Forms.DataGridView MainDataGridView;
         private System.Windows.Forms.Button AddButton;
+        private System.Windows.Forms.Button DeleteButton;
     }
 }
 
